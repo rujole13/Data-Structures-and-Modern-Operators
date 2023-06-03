@@ -53,6 +53,37 @@ const restaurant = {
   },
 };
 
+const airline = 'TAP Air Portugal';
+const plane = 'A320';
+
+console.log(plane[0]);
+console.log(plane[1]);
+console.log(plane[2]);
+console.log('B737'[0]);
+
+console.log(airline.indexOf('r'));
+console.log(airline.lastIndexOf('r'));
+console.log(airline.indexOf('Portugal'));
+
+console.log(airline.slice(4, 7));
+
+console.log(airline.slice(0, airline.indexOf(' ')));
+console.log(airline.slice(airline.lastIndexOf(' ') + 1));
+
+console.log(airline.slice(1, -1));
+
+const checkMiddleSeat = function (seat) {
+  // B and E are middle seats
+  const s = seat.slice(-1);
+  if (s === 'B' || s === 'E') {
+    return 'Middle Seat';
+  } else return 'Not Middle Seat';
+};
+console.log(checkMiddleSeat('11B'));
+console.log(checkMiddleSeat('23C'));
+console.log(checkMiddleSeat('3E'));
+
+/*
 const question = new Map([
   ['question', 'What is the best programming language in the world?'],
   [1, 'C'],
@@ -79,7 +110,6 @@ for (const [key, value] of question) {
 const answer = Number(prompt('Your answer'));
 console.log(answer);
 console.log(question.get(answer === question.get('correct')));
-/*
 //////////////////////////////////////
 // Maps: Fundamentals
 const rest = new Map();
