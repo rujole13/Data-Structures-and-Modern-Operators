@@ -167,6 +167,8 @@ HINT 4: This challenge is difficult on purpose, so start watching the solution i
 
 Afterwards, test with your own test data!
 
+;)
+
 GOOD LUCK 😀
 */
 
